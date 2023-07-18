@@ -9,7 +9,7 @@ def read_csv_file(file_path):
     return data
 
 def main():
-    file_path = "/Users/juanixcoy/Desktop/All Years Homelessness Calculations.csv"
+    file_path = "All Years Homelessness Calculations.csv"
     csv_data = read_csv_file(file_path)
 
     csv_data.sort(key=lambda x: (int(x["geoid20"]), int(x["year"])))
